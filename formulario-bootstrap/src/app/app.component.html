@@ -1,0 +1,28 @@
+<div class="container">
+
+  <div class="starter-template">
+    <div class="row">
+      <div class="col-md-12 mt-5">
+
+        <h1>{{titulo}}</h1>
+
+        <form [formGroup] = 'contacto' (ngSubmit) = "onSubmit()"  >
+
+          <div class="form-group">
+
+            <Label>Nombres y Apellidos</Label>
+            <input  class="form-control"  type="text" formControlName = "nya"
+            [ngClass]="{ 'is-invalid': submitted }"/>
+            <div  *ngIf="submitted" class="invalid-feddback" ></div>
+          </div>
+
+          <button  class="btn btn-primary">Aceptar</button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
