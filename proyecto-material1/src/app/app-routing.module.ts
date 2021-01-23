@@ -9,6 +9,12 @@ import { SorteoComponent } from './sorteo/sorteo.component';
 //ProximoComponent
 import { ProximoComponent } from './proximo/proximo.component';
 
+import { MinMaxComponent } from './min-max/min-max.component';
+
+import { ApirestGetComponent } from './apirest-get/apirest-get.component';
+
+import { ConsultaarticulosComponent } from './consultaarticulos/Consultaarticulos.Component';
+
 
 const routes: Routes = [
   {path: 'pais1', component: Pais1Component},
@@ -16,6 +22,9 @@ const routes: Routes = [
   {path: 'pais3', component: Pais3Component},
   {path: 'sorteo', component: SorteoComponent},
   {path: 'proximo', component: ProximoComponent},
+  {path: 'minmax', component: MinMaxComponent},
+  {path: 'get', component: ApirestGetComponent},
+  {path: 'articulo', component: ConsultaarticulosComponent},
 ];
 
 @NgModule({

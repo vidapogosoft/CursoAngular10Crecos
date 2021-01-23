@@ -18,7 +18,14 @@ import { SorteoComponent } from './sorteo/sorteo.component';
 import { DadoComponent } from './dado/dado.component';
 import { CronometroComponent } from './cronometro/cronometro.component';
 import { ProximoComponent } from './proximo/proximo.component';
+import { SelectornumericoComponent } from './selectornumerico/selectornumerico.component';
+import { MinMaxComponent } from './min-max/min-max.component';
+import { ListadoarticulosComponent } from './listadoarticulos/listadoarticulos.component';
+import { ConsultaarticulosComponent } from './consultaarticulos/consultaarticulos.component';
 
+
+import { HttpClientModule } from '@angular/common/http';
+import { ApirestGetComponent } from './apirest-get/apirest-get.component';
 
 //import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
@@ -33,7 +40,12 @@ import { ProximoComponent } from './proximo/proximo.component';
     SorteoComponent,
     DadoComponent,
     CronometroComponent,
-    ProximoComponent
+    ProximoComponent,
+    SelectornumericoComponent,
+    MinMaxComponent,
+    ListadoarticulosComponent,
+    ConsultaarticulosComponent,
+    ApirestGetComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +56,8 @@ import { ProximoComponent } from './proximo/proximo.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
